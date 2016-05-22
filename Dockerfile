@@ -27,6 +27,6 @@ VOLUME /var/cache/cups
 
 EXPOSE 631
 
-ENTRYPOINT ["/etc/init.d/cups"]
-
-CMD ["restart"]
+ADD start_cups.sh /root/start_cups.sh
+RUN chmod +x /root/start_cups.sh
+CMD ["/root/start_cups.sh"]
