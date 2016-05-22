@@ -9,13 +9,7 @@ RUN apt-get update && \
                         wget \
                         cups \
                         cups-pdf \
-                        whois && \
-    apt-get clean
-
-# Disbale some cups backend that are unusable within a container
-RUN mv /usr/lib/cups/backend/parallel /usr/lib/cups/backend-available/ &&\
-    mv /usr/lib/cups/backend/serial /usr/lib/cups/backend-available/ &&\
-    mv /usr/lib/cups/backend/usb /usr/lib/cups/backend-available/
+                        whois
 
 RUN apt-get install -y printer-driver-all
 
