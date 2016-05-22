@@ -11,7 +11,7 @@ RUN apt-get update && \
                         cups-pdf \
                         whois
 
-RUN apt-get install -y printer-driver-all
+RUN apt-get install -y printer-driver-splix
 
 VOLUME /etc/cups/
 VOLUME /var/log/cups
