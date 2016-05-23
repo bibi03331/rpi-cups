@@ -1,6 +1,7 @@
 #!/bin/bash
 docker run -d \
-  -p 631:631 \
+  -p 631:631/udp \
+  -p 631:631/tcp \
   --name=rpi-cups \
   -e CUPS_USER_ADMIN=admin \
   -e CUPS_USER_PASSWORD=dHAm4Chaj7aJEwu9hixA \
