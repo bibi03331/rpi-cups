@@ -1,0 +1,6 @@
+CUPS server in Docker for Raspberry Pi
+
+Configuration for OS X : Add a printer by IP address
+- Address : IP address of your Docker host
+- Protocol : IPP
+- Queue : /printers/name_of_your_printer
