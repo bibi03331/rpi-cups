@@ -9,6 +9,7 @@ RUN apt-get update && \
                         wget \
                         cups \
                         cups-pdf \
+			python-cups \
                         whois
 
 RUN apt-get install -y printer-driver-splix
