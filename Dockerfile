@@ -1,6 +1,7 @@
 FROM resin/rpi-raspbian
 
 MAINTAINER Sebastien LAPORTE
+
 RUN apt-get update && \
     apt-get install -y  nano \
                         ca-certificates \
